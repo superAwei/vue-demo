@@ -21,12 +21,21 @@ const routes = [
     component: () => import('../views/NewPage.vue'),
     children: [
       {
+        path: '',
+        component: () => import('../views/NewPage.vue')
+      },
+      {
         path: 'a',
         component: () => import('../views/componentA.vue')
       },
       {
         path: 'b',
         component: () => import('../views/componentB.vue')
+      },
+      {
+        // 動態路由設定 id 可以自己取
+        path: 'dynamicRouter/:id',
+        component: () => import('../views/DynamicRouter.vue')
       }
     ]
   }

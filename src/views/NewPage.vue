@@ -11,7 +11,7 @@
         </div>
     </div>
      <div class="col-8">
-         <router-view> 所有產品</router-view>
+        <router-view></router-view>
      </div>
   </div>
 </template>
